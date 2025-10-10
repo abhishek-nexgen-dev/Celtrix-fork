@@ -11,11 +11,15 @@ export function copyTemplates(projectPath, config) {
   const { stack } = config;
 
   if(stack === "mern"){
-    const backendTemplate = path.join(__dirname, "..","templates","mern","server")
-    const serverPath = path.join(projectPath, "server");
+
+
+    console.log('Stack is mern' , config);
+
+    // const backendTemplate = path.join(__dirname, "..","templates","mern","server")
+    // const serverPath = path.join(projectPath, "server");
     
-    logger.info("📂 Copying backend template files...");
-    fs.copySync(backendTemplate, serverPath);
+    // logger.info("📂 Copying backend template files...");
+    // fs.copySync(backendTemplate, serverPath);
   }
 
   else if(stack === 'mern+tailwind+auth'){
