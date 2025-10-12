@@ -141,8 +141,7 @@ async function setupStackProject(projectPath, config, projectName) {
   const setupStrategies = {
     mern: async () => {
       if(config.backendLanguage === 'typescript'){
-        let ts = new SetupBackendWithTypeScript(projectPath, config, projectName);
-
+        let ts = new SetupBackendWithTypeScript(projectPath, config, projectName)
         await ts.ConfigureTS();
       }
     },

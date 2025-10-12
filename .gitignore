@@ -6,3 +6,6 @@ coverage/
 .DS_Store
 .env
 scripts/test*
+
+
+test-backend/
